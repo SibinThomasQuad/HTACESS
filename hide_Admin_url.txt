@@ -1,0 +1,7 @@
+RewriteEngine On
+
+# Block /admin/login URL
+RewriteRule ^admin/login$ - [F]
+
+# Redirect blocked URL to a new location
+RewriteRule ^admin/login$ /new-url [R=301,L]
