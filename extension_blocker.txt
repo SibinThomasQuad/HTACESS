@@ -1,0 +1,5 @@
+RewriteEngine On
+
+# Prevent direct access to files with specific extensions
+RewriteCond %{REQUEST_URI} \.(php|conf|ini|log)$ [NC]
+RewriteRule ^ - [F]
