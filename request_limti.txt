@@ -1,0 +1,22 @@
+# Enable mod_evasive module
+<IfModule mod_evasive20.c>
+
+    # Size of the hash table used to track clients and their request rates
+    DOSHashTableSize 3097
+
+    # Maximum number of requests for a single page or script within the DOSPageInterval
+    DOSPageCount 5
+
+    # Maximum number of requests for all pages or scripts on the site within the DOSSiteInterval
+    DOSSiteCount 100
+
+    # Time interval (in seconds) for tracking requests for a single page or script
+    DOSPageInterval 1
+
+    # Time interval (in seconds) for tracking requests for all pages or scripts on the site
+    DOSSiteInterval 1
+
+    # Blocking period (in seconds) for IP addresses that exceed the request limits
+    DOSBlockingPeriod 10
+
+</IfModule>
