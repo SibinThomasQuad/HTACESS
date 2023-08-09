@@ -1,0 +1,7 @@
+Order Deny,Allow
+Deny from all
+
+# Whitelist IP addresses
+Allow from 192.168.1.1
+Allow from 10.0.0.2
+Allow from 203.0.113.0
