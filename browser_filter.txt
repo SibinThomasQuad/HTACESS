@@ -1,0 +1,10 @@
+RewriteEngine On
+
+# Allow access to common browser user agents
+RewriteCond %{HTTP_USER_AGENT} ^Mozilla.*$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Opera.*$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^AppleWebKit.*$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Chrome.*$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Safari.*$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Firefox.*$ [NC]
+RewriteRule ^ - [L]
