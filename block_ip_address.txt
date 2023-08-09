@@ -1,0 +1,3 @@
+# Block specific IP addresses
+Deny from 123.45.67.89
+Deny from 987.65.43.21
