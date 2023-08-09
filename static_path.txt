@@ -1,0 +1,6 @@
+Alias /static /path/to/your/long/folder/structure
+<Directory "/path/to/your/long/folder/structure">
+    Options Indexes FollowSymLinks MultiViews
+    AllowOverride None
+    Require all granted
+</Directory>
